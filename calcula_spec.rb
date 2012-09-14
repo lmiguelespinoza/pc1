@@ -14,4 +14,7 @@ before do
    it 'suma vacio 1,2' do
      @calcula.suma('1,2').must_equal 3
    end 
+   it 'suma vacio 1,2,3' do
+     @calcula.suma('1,2,3').must_equal 6
+   end 
 end
