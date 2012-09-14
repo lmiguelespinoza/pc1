@@ -4,7 +4,7 @@ def suma(cadena)
   cadnum=cadsal.split(',')
   resultado=0
   cadnum.each do |digito|      	
-    resultado+=digito.to_i  if digito!= '\n'
+    resultado+=digito.to_i 
   end  
   return resultado
 end
