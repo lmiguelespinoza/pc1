@@ -23,4 +23,7 @@ before do
    it 'suma 1,2,3\n4' do
      @calcula.suma('1,2,3\n4').must_equal 10
    end 
+   it 'suma 1,-2,3\n4' do
+     @calcula.suma('1,-2,3\n4').must_equal 0
+   end 
 end
