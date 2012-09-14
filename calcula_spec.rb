@@ -20,7 +20,7 @@ before do
    it 'suma 1,2,3,4,5' do
      @calcula.suma('1,2,3,4,5').must_equal 15
    end 
-#   it 'suma 1,2,3\n4' do
-     #@calcula.suma('1,2,3\n4').must_equal 10
-#   end 
+   it 'suma 1,2,3\n4' do
+     @calcula.suma('1,2,3\n4').must_equal 10
+   end 
 end

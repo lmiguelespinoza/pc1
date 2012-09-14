@@ -1,9 +1,10 @@
 class Calcula
 def suma(cadena)
-  cadnum=cadena.split(',')
+  cadsal=cadena.gsub('\n',',')
+  cadnum=cadsal.split(',')
   resultado=0
-  cadnum.each do |digito|    
-    resultado+=digito.to_i 
+  cadnum.each do |digito|      	
+    resultado+=digito.to_i  if digito!= '\n'
   end  
   return resultado
 end
